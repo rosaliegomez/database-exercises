@@ -8,7 +8,7 @@ SELECT artist, name, release_date
 FROM albums
 WHERE name = 'Sgt. Pepper''s Lonely Hearts Club Band'\G;
 
-SELECT genre as 'Nevermind is part of the following genres: '
+SELECT genre, artist as 'Nevermind is part of the following genres: '
 FROM albums
 WHERE name= 'Nevermind'\G;
 
