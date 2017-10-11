@@ -16,7 +16,7 @@ SELECT artist, name, release_date as 'The following albums were released in the 
 FROM albums
 WHERE release_date BETWEEN 1990 AND 1999\G;
 
-SELECT artist, name, sales AS 'These albums have sold less than $20 million:'
+SELECT artist, name, sales AS 'These albums sold less than $20 million:'
 FROM albums
 WHERE sales < 20\G;
 
