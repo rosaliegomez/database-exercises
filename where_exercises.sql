@@ -22,3 +22,6 @@ WHERE birth_date LIKE '%-12-25' AND hire_date BETWEEN '1990-01-01' AND '1999-12-
 SELECT *
 FROM employees
 WHERE last_name LIKE '%q%' AND last_name NOT LIKE '%qu%';
+
+SELECT hire_date, first_name, last_name
+FROM employees GROUP BY hire_date, first_name, last_name;
